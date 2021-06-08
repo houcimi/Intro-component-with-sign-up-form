@@ -76,10 +76,36 @@ body {
     margin-bottom: 15px;
     outline: none;
 }
+.formarea form input.wrong{
+    border: 2px solid var(--Red);
+    position: relative;
+    margin-bottom: 6px;
+}
+.formarea form .inpt {
+    position: relative;
+}
+.formarea form .inpt > span {
+    font-size: 11px;
+    float: right;
+    margin-bottom: 12px;
+    color: var(--Red);
+    font-weight: 600;
+    display: none;
+}
+.formarea form .inpt.active::before{
+    content: url('images/icon-error.svg');
+    position: absolute;
+    z-index: 30;
+    top: 12px;
+    right: 7%;
+}
 .formarea form input::placeholder{
     font-family: inherit;
     font-weight: 700;
     color: var(--Dark-Blue);
+}
+.formarea form input:focus::placeholder{
+    color: transparent;
 }
 .formarea form input[type=submit]{
     background-color: var(--Green);
