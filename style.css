@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    /* Primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    /* Accent */
+    --Blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+* {
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.container {
+    height: calc(100vh - 40px) ;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Red);
+    background-image: url('images/bg-intro-desktop.png');
+}
+.text {
+    flex-basis: 45%;
+}
+.text h2 {
+    color: white;
+    font-size: 35px;
+}
+.text p {
+    font-size: 12px;
+    color: white;
+}
+.formarea{
+    flex-basis: 45%;
+    height: 70%;
+}
+.formarea .btn {
+    padding: 15px 10px;
+    color: white;
+    font-family: inherit;
+    width: 100%;
+    background-color: var(--Blue);
+    border: none;
+    border-radius: 8px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    box-shadow: 0px 8px 0px 0px #0000001f;
+    cursor: pointer;
+}
+.formarea .btn span {
+    font-weight: 600;
+}
+.formarea form {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 0px 0px #0000001f;
+}
+.formarea form input {
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 1px solid var(--Grayish-Blue);
+    margin-bottom: 15px;
+    outline: none;
+}
+.formarea form input::placeholder{
+    font-family: inherit;
+    font-weight: 700;
+    color: var(--Dark-Blue);
+}
+.formarea form input[type=submit]{
+    background-color: var(--Green);
+    border: none;
+    color: white;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0px 5px 0px 0px hsl(154deg 91% 36%);
+}
+.formarea form p {
+    font-size: 11px;
+    color: var(--Grayish-Blue);
+}
+.formarea form p span {
+    color: var(--Red);
+    font-weight: 700;
+}
